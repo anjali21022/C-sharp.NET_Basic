@@ -1,0 +1,24 @@
+Methods and Properties of Console Class in C#
+
+  What is Console Class in C#?
+    In order to implement the user interface in console applications, Microsoft provided us with a class called Console.
+    The Console class is available in the System namespace. 
+    This Console class provides some methods and properties using which we can implement the user interface in a console application.
+  
+  Properties of Console Class in C#
+    Title
+    BackgroundColor
+    ForegroundColor
+    CursorSize
+
+  Methods of Console Class in C#
+    Clear()
+    Beep()
+    ResetColor()
+    Write("string")
+    WriteLine("string")
+    Wite("variable")
+    WriteLine("variable")
+    Read()
+    ReadLine()
+    ReadKey()

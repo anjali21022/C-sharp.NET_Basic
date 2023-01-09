@@ -1,0 +1,15 @@
+Basic Structure of C# Program.
+
+What is C#.NET ?
+  It is one of the Microsoft Programming Language, to work with .NET Framework to develop
+  different kinds of applications such as Web, Console, Windows, Restful Services, etc.
+  C#.NET is a completely Object-Oriented Programming Language. It means it supports all 4 OOPs Principles 
+  i.e. Abstraction, Encapsulation, Inheritance, and Polymorphism.
+
+Basic Structure of the C# Program.
+
+  Namespaces
+  Class
+  Members
+  Blocks
+  Statements
