@@ -1,0 +1,133 @@
+Data Types in C#
+
+  What is a Data Type in C#?
+    The Datatypes are something that gives information about:
+    Size of the memory location.
+    The Range of data that can be stored inside that memory location
+    Possible Legal Operations that can be performed on that memory location.
+    What Types of Results come out from an expression when these types are used inside that expression?
+
+  What are the Different Types of Data types Available in C#?
+    1) Value Data Types
+       Pre-Defined Data Types: (Integer, Float, Boolean, Char)
+       User-Defined Data Types: (Enumeration, Structure)
+    2) Pointer Data Types
+    3) Reference Data Types
+       Pre-Defined Data Types: (Objects, Strings)
+       User-Defined Dat Types: (Class, Interface)
+
+  What is Value Data Type in C#?
+    The data type which stores the value directly in the memory is called the Value Data Type in C#.
+    The examples are int, char, boolean, and float which store numbers, alphabets, true/false, and floating-point numbers respectively.
+  
+  Unsigned Integer
+    unsigned means only positive values.
+    As it represents an 8-bit unsigned integer, so it can store 256 numbers.
+    As it stores only positive numbers, so the min value it can store is 0 and,
+    max value it can store is 255.
+
+  Signed Integer
+    Signed means both positive and negative values.
+    In this case thr maximum needs to be divided by two i.e 256/2 which is 128.
+    So, it will store 128 positive numbers and 128 negative numbers.
+    The positive numbers will be from 0 to 127 and negative numbers will be from -1 to -128.
+
+  ASCII Table
+    Dec  = Decimal Value
+    Char = Character
+
+   '5' has the int value 53
+   if we write '5'-'0' it evaluates to 53-48, or the int 5
+   if we write char c = 'B'+32; then c stores 'b'
+
+
+   Dec  Char                           Dec  Char     Dec  Char     Dec  Char
+   ---------                           ---------     ---------     ----------
+    0  NUL (null)                      32  SPACE     64  @         96  `
+    1  SOH (start of heading)          33  !         65  A         97  a
+    2  STX (start of text)             34  "         66  B         98  b
+    3  ETX (end of text)               35  #         67  C         99  c
+    4  EOT (end of transmission)       36  $         68  D        100  d
+    5  ENQ (enquiry)                   37  %         69  E        101  e
+    6  ACK (acknowledge)               38  &         70  F        102  f
+    7  BEL (bell)                      39  '         71  G        103  g
+    8  BS  (backspace)                 40  (         72  H        104  h
+    9  TAB (horizontal tab)            41  )         73  I        105  i
+   10  LF  (NL line feed, new line)    42  *         74  J        106  j
+   11  VT  (vertical tab)              43  +         75  K        107  k
+   12  FF  (NP form feed, new page)    44  ,         76  L        108  l
+   13  CR  (carriage return)           45  -         77  M        109  m
+   14  SO  (shift out)                 46  .         78  N        110  n
+   15  SI  (shift in)                  47  /         79  O        111  o
+   16  DLE (data link escape)          48  0         80  P        112  p
+   17  DC1 (device control 1)          49  1         81  Q        113  q
+   18  DC2 (device control 2)          50  2         82  R        114  r
+   19  DC3 (device control 3)          51  3         83  S        115  s
+   20  DC4 (device control 4)          52  4         84  T        116  t
+   21  NAK (negative acknowledge)      53  5         85  U        117  u
+   22  SYN (synchronous idle)          54  6         86  V        118  v
+   23  ETB (end of trans. block)       55  7         87  W        119  w
+   24  CAN (cancel)                    56  8         88  X        120  x
+   25  EM  (end of medium)             57  9         89  Y        121  y
+   26  SUB (substitute)                58  :         90  Z        122  z
+   27  ESC (escape)                    59  ;         91  [        123  {
+   28  FS  (file separator)            60  <         92  \        124  |
+   29  GS  (group separator)           61  =         93  ]        125  }
+   30  RS  (record separator)          62  >         94  ^        126  ~
+   31  US  (unit separator)            63  ?         95  _        127  DEL
+
+  48 = 0, 65 = A, 97 = a (points to remember).
+
+  What is a char data type in C#?
+    Char is a 2-Byte length data type that can contain Unicode data.
+ 
+  What is Unicode? 
+    Unicode is a standard for character encoding and decoding for computers.
+
+  String Data Type in C#
+    A string is nothing but a series of char data types. 
+    We can use various Unicode encodings formats such as UTF-8(8-bit), UTF-16(16-bit), and so on. 
+
+  Numeric Data Types in C#:
+    Numbers without Decimal:
+    1) 16-Bit Signed Numeric: Example: Int16
+    2) 32-Bit Signed Numeric: Example: Int32
+    3) 64-Bit Signed Numeric: Example: Int64
+
+    Numeric Numbers with Decimal in C#:
+    Again, in Numbers with Decimal, we are provided with three flavors. They are as follows:
+    1) Single (single-precision floating-point number) (4 Bytes)
+    2) Double (double-precision floating-point number) (8 Bytes)
+    3) Decimal (Represents a decimal floating-point number) (16 Bytes)
+    In order to create a single value, we need to add the suffix f at the end of the number, similarly, if you want to create a Decimal value, you need to suffix the value with m (Capital or Small does not matter).
+    If you are not suffixing with anything, then the value is going to be double by default.
+
+  Comparison between Float, Double, and Decimal:
+  Size:
+    Float uses 4 Bytes or 32 bits to represent data.
+    Double uses 8 Bytes or 64 bits to represent data.
+    Decimal uses 16 Bytes or 128 bits to represent data.
+  Range:
+    The float value ranges from approximately -3.402823E+38 to 3.402823E+38.
+    The double value ranges from approximately -1.79769313486232E+308 to 1.79769313486232E+308.
+    The Decimal value ranges from approximately -79228162514264337593543950335 to 79228162514264337593543950335.
+  Precision:
+    Float represents data with the single-precision floating-point number.
+    Double represents data with the double-precision floating-point numbers.
+    Decimal represents data with decimal floating-point numbers.
+  Accuracy:
+    Float is less accurate than Double and Decimal.
+    Double is more accurate than Float but less accurate than Decimal.
+    Decimal is more accurate than Float and Double.
+
+  What is the Reference Data Type in C#?
+    The data type which is used to store the reference of a variable is called Reference Data Type. In other words, we can say that the reference types do not store the actual data stored in a variable, rather they store the reference to the variables.
+    Again, the Reference Data Types are categorized into 2 types. They are as follows.
+    1) Predefined Types – Examples include Objects, Strings, and dynamics.
+    2) User-defined Types – Examples include Classes and Interfaces.
+
+  What is Pointer Type in C#?
+    The pointer in C# language is a variable, it is also known as a locator or indicator that points to an address of the value which means pointer-type variables stores the memory address of another type.
+    To get the pointer details we have two symbols ampersand (&) and asterisk (*).
+    1) ampersand (&): It is known as Address Operator. It is used to determine the address of a variable.
+    2) asterisk (*): It is also known as Indirection Operator. It is used to access the value of an address.
