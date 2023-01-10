@@ -1,0 +1,98 @@
+Literals in C#
+
+  The Literals in C# are fixed values (or hard-coded values) that are given to your variable and these values cannot be modified during the execution of a 
+  program.
+  1) The fixed values are called literals in C#.
+  2) Literal is a value that is used by the varaible.
+  For example, for int x = 10; Here, x is a variable and 10 is a literal.
+
+Types of Literals in C#
+
+  1) Numeric Literal: (Integer Literal, Floating-Point Literal)
+  2) Boolean Literal
+  3) Character Literal: (Character Literal, String Literal)
+
+  Integer Literals in C#
+    The Integer literals in C# are used to write values of types int, uint, long, ulong, etc.We can represent the Integer Literals in the form of Decimal,
+    Binary, or Hexadecimal.Here, we need to use a prefix to specify whether the Integer Literal is Binary (prefixed with 0b), or Hexadecimal (0X) type.
+    No prefix is required for the Decimal numbers.
+    By default, every Integer Literal is of int type. For Integral data types (byte, short, int, long), we can specify literals or fixed values in the
+    following 3 ways:
+    1) Decimal (Base-10): Digits from 0-9 are allowed in this form. No prefix is required for the decimal type of literal. Example: int x=101;
+    2) Hexa-Decimal (Base-16): Digits 0-9 are allowed and also characters from a-f are allowed in this form.Furthermore, both uppercase and lowercase
+       characters can be used.C# provides an exception here i.e. as we know that C# is a case-sensitive programming language but here C# is not case-sensitive.
+       Here, the hexadecimal number should be prefixed with 0X or 0x. and suffix with Face. Example: int x = 0X123F;
+    3) Binary (0 and 1): In this form, the allowed digits are only 1’s and 0’s. The binary number should be prefixed with 0b. Example: int x = 0b1111;
+    Note: There is no Octal Number Literals in C#. On many websites, you will find that in Octal number, digits from 0 – 7 are allowed and the octal number
+    should always have a prefix 0. Example: int x=0146; But this is wrong. In C#, Octal Number Representation is not possible.
+  
+  Floating-Point Literals in C#
+    The Literals in C# which have an integer part and a decimal point are known as Floating-Point literals i.e. Numbers with Decimal.
+    The Floating-Point Literals are used to write values of types float, double, and decimal.
+    By default, every floating-point literal is of double type and hence we can’t assign values directly to float and decimal variables. If you want to assign
+    values to a float variable, then you need to add the suffix f at the end of the floating-point literal. Similarly, if you want to assign values to a
+    decimal variable, then you need to add the suffix m or M at the end of the floating-point literal. If you are not suffixing the floating-point literal
+    with anything, then the floating-point literal is going to be double by default. Even, if you want, then you can also specify explicitly floating-point
+    literal as the double type by suffixed with d or D, of course, this convention is not required.
+
+  Character Literals in C#
+    The Character Literals in C# are enclosed in single quotes, for example, ‘a’, and can be stored in a simple variable of char data type. A character 
+    literal can be a plain character for example, ‘a’, an escape sequence for example, ‘\t’, or a universal character for example, ‘\u02B0’. So, for character data types we can specify character literals in 3 ways.
+    They are as follows: 
+    1) Character Literals using Single Quote:
+       We can specify Character literals to a char data type as a single character using a single quote.
+       Example: char ch = ‘A’;
+    2) Character Literals using Unicode Representation:
+       We can specify Character literals using Unicode representation ‘\uXXXX’ where XXXX is the 4 hexadecimal numbers.
+       Example: char ch = ‘\u0041’; // Here /u0041 represent A.
+    3) Character Literals using Escape Sequence:
+       Every escape character in C# can be specified as a character literal.
+       Example: char ch = ‘\n’;
+       There are certain characters in C# when preceded by a backslash, which will have a special meaning that they are used to represent. For example,
+       newline (\n) and tab (\t). The following is the list of some of the escape sequence characters available in C#.
+       Escape           Sequence Meaning
+        \\               \Character
+        \' '             Character
+        \" "             Character
+        \? ?             Character
+        \a               Alert or Bell
+        \b               Backspace
+        \f               Form Feed
+        \n               NewLine
+        \r               Carriage return
+        \t               Horizontal tab
+        \v               Vertical tab
+        \ooo             Octal number of one to three digits
+        \xhhh            Hexadecimal number of one or more digits.
+ 
+  String Literals in C#
+    The Literals in C# which are enclosed with double quotes (” “) or start with @” “ are known as the String literals. In C#, we can represent the string 
+    literals in two ways. They are as follows:
+    1) Regular String Literals: A regular string literal in C# consists of zero or more characters enclosed in double quotes, for example, “Dot Net Tutorials”, 
+       and may include both simple escape sequences for example, “Dot\nNet\tTutorials” and Unicode escape sequences.
+    2) Verbatim String Literals: A verbatim string literal starts with an @ character followed by a double-quote which may contain zero or more characters, 
+       and ends with a double-quote character. They can store characters or escape sequences, for example, @”Dot\nNet\tTutorials”.
+
+  Boolean Literals in C#
+    Only two values are allowed for Boolean literals i.e. true and false. Boolean literals are simple. There are only two logical values that a boolean
+    value can have, true and false. The values of true and false do not convert into any numerical representation. The true literal in C# does not equal 1,
+    nor does the false literal equal 0.
+
+    Example:
+    bool b1 = true;
+    bool b2 = false;
+    bool b3 = 0; //Error
+    bool b4 = 1; //Error
+
+    Note: The assigned true and false values should be the lower case only otherwise you will get compile time error. The following is not allowed.
+    bool b1 = True; //Error
+    bool b2 = False; //Error
+    bool b1 = TRUE; //Error
+    bool b2 = FALSE; //Error
+
+  Binary Literals in C#
+    The binary literal is used to store the binary value in a variable. And if you want to create a binary literal, then the literal value should be 
+    prefixed with 0b. And here, you can use only 0 and 1. If you use any other number then you will get compile time error.
+    int num1 = 0b10001; //Allowed
+    int num2 = 0b1000145; //Error
+    Here when the compiler sees 0b in the variable value, then it automatically treated this literal as a binary literal.
