@@ -1,0 +1,53 @@
+Type Casting in C#
+  In simple words, we can say that Type Casting or Type Conversion in C# is the process to change one data type value into another data type.
+
+Types of Type Casting in C#
+  1) Implicit Type Casting
+  2) Explicit Type Casting
+
+  Implicit Conversion or Implicit Type Casting / Automatic Type Conversion in C#'
+    The Implicit Conversion or Implicit Type Casting in C# is automatically done by the compiler and in this case, there will be no data loss.
+    Here, the typecasting or type conversion is done from a smaller data type to a larger data type. This type of type conversion is safe.
+    In implicit Type Conversion, the compiler will automatically convert one type to another. Generally, in the case of implicit Type Conversion, the smaller data types like int (having less memory size)
+    are automatically converted to larger data types like long (having larger memory size).
+
+  Implicit Type Casting happens when:
+    1) The two data types are compatible.
+    2) When we assign a value of a smaller data type to a bigger data type.
+  The following diagram shows the implicit types of conversion that are supported by C#:
+  Convert from Data Type     Convert To Data Type
+  byte                       short, int, long, float, double
+  short                      int, long, float, double
+  int                        long, float, double
+  long                       float, double
+  float                      double
+
+  Explicit Conversion or Explicit Type Casting in C#
+    If you want to convert the large data type to a small data type in C#, then you need to do the same explicitly using the cast operator.
+    Explicit Conversion or Explicit Type Casting in C# is done by using the Cast operator. It includes the conversion of larger data types to smaller data types.
+    In the case of Explicit Conversion or Explicit Type Casting. there is a chance of data loss or the conversion might not be succeeded for some reason. This is an unsafe type of conversion.
+    In Explicit Type Conversion, we explicitly convert one data type to another data type. In this case, the larger data types like double or long 
+    (having large memory size) are converted to smaller data types like int, byte, short, float, etc. (having small memory size).
+
+Convert Class Helper Methods in C#
+  The Convert class provides the following methods to convert a value to a particular type. The following methods are going to convert the value
+  irrespective of type compatibility. It means if types are compatible, then it will convert and if types are not compatible, then also it will try to convert.
+  Method        Description
+  ToBoolean     It will Converts a type to Boolean Value.
+  ToChar        It will Converts a type to Character Value.       
+  ToByte        It will Converts a type to Byte Value.
+  ToDecimal     It will Converts a type to Decimal Point Value.
+  ToDouble      It will Converts a type to Double Data Type.
+  ToInt16       It will Converts a type to 16-bit Integer.
+  ToInt32       It will Converts a type to 32-bit Integer.
+  ToInt64       It will Converts a type to 64-bit Integer.
+  ToString      It will Converts a given type to String.
+  ToUInt16      It will Converts a type to unsigned 16-bit integer.
+  ToUInt32      It will Converts a type to unsigned 32-bit integer.
+  ToUInt64      It will Converts a type to unsigned 64-bit integer.
+
+Type Conversion using Parse() Method in C#
+  In C#, we can also use the built-in Parse() method to perform type conversion. So, while performing type conversion between non-compatible types like
+  int and string, we can also use Parse() method like the Convert class helper methods. Now, if you go to the definition of built-in value data types such as 
+  int, short, long, bool, etc., then you will see that the Parse method is implemented as a static method in those built-in value data types.
+  So, using the built-in type, we can call the Parse method.
