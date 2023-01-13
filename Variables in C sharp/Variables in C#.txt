@@ -1,0 +1,95 @@
+Variables in C#
+  
+  What is a Variable in C# Language?
+    A name that is given for any computer memory location is called a variable. The purpose of the variable is to provide some name to a memory location where
+    we store some data. The user will access the data by the variable name and the compiler will access the data by the memory address. So, the variable is a
+    named location in the computer memory where a program can store the data. 
+  
+  Rules for variable declaration in C#:
+    1) A variable name must begin with a letter or underscore.
+    2) Variables in C# are case sensitive
+    3) They can be constructed with digits and letters.
+    4) No special symbols are allowed other than underscores.
+    5) sum, Height, _value, and abc123, etc. are some examples of the variable name.
+
+  How to declare a variable in C#?
+    The Syntax for declaring a variable in C# is as follows:
+    Syntax: data_type variable_name;
+    Here, data_type is the type of data to be stored in the variable, and variable_name is the name given to that variable.
+    Example: int age;
+    Here, the data type is int and age is the name of the variable where the age variable can only hold an integer value.
+
+  How to initialize a Variable in C#?
+    The Syntax for initializing a variable in C# is as follows:
+    Syntax: data_type variable_name = value;
+    Here, data_type is the type of data to be stored in the variable, variable_name is the name given to the variable and value is the initial value stored in the variable.
+    Example: int age = 20;
+    Here, int is the data type and age is the name of the variable where 20 is the integer value stored inside the age variable.
+
+  Types of Variables in a Class in C#:
+    Now, let us understand the different kinds of variables a class can have and their behavior. Basically, there are four types of variables that we can 
+    declare inside a class in C#. They are as follows:
+    1) Non-Static/Instance Variable
+    2) Static Variable
+    3) Constant Variable
+    4) Readonly Variable
+
+  Static and Non-Static Variables in C#
+    If we declare a variable explicitly by using the static modifier, we call it a static variable, and the rest of all are non-static variables.
+    Again, if we declare a variable inside a static block, then also that variable is a static variable. And if we declare a variable inside a non-static 
+    block, then that becomes a non-static variable.
+
+  Difference Between Static and Non-Static Variables in C#
+    1) In the case of an Instance Variable, each object will have its own copy whereas We can only have one copy of a static variable irrespective of how
+       many objects we create.
+    2) In C#, the Changes made to the instance variable using one object will not be reflected in other objects as each object has its own copy of the
+       instance variable. In the case of static variables, changes made in one object will be reflected in other objects as static variables are common to all objects of a class.
+    3) We can access the instance variables through object references whereas the Static Variables can be accessed directly by using the class name in C#.
+    4) In the life cycle of a class, a static variable is initialized only once, whereas instance variables are initialized for 0 times if no instance is
+       created and n times if n number of instances are created. 
+
+  Instance/Non-Static Variables in C#
+    1) Scope of Instance Variable: Throughout the class except in static methods.
+    2) The lifetime of Instance Variable: Until the object is available in the memory.
+  Static Variables in C#
+    1) Scope of the Static Variable: Throughout the class.
+    2) The Lifetime of Static Variable: Until the end of the program.
+
+  Constant Variables in C#
+    In C#, if we declare a variable by using the const keyword, then it is a constant variable and the value of the constant variable can’t be modified once
+    after its declaration. So, it is mandatory to initialize the constant variable at the time of its declaration only. Suppose, you want to declare a
+    constant PI in your program, then you can declare the constant as follows:
+    const float PI = 3.14f;
+
+  Difference Between Static and Constant Variable in C#:
+    The only difference between a static and constant variable is that the static variables can be modified whereas the constant variables in C# can’t be
+    modified once it is declared. For a better understanding, please have a look at the following example. In the below example, inside the Main method, we
+    are trying the modify both static x and constant PI value.
+
+  Difference Between Static and Constant Variable in C#:
+    The only difference between a static and constant variable is that the static variables can be modified whereas the constant variables in C# can’t be
+    modified once it is declared.
+
+  Read-Only Variables in C#
+    When we declare a variable by using the readonly keyword, then it is known as a read-only variable and these variables can’t be modified like constants
+    but after initialization. That means it is not mandatory to initialize a read-only variable at the time of its declaration, they can also be initialized
+    under the constructor. That means we can modify the read-only variable value only within a constructor.
+    The behavior of read-only variables will be similar to the behavior of non-static variables in C#, i.e. initialized only after creating the instance of
+    the class and once for each instance of the class is created. That means we can consider it as a non-static variable and to access readonly variables we
+    need an instance.
+
+  Difference Between Non-Static and Readonly in C#:
+    The only difference between a non-static and readonly variable is that after initialization, you can modify the non-static variable value but you cannot
+    modify the readonly variable value.
+
+  What is the difference between a constant and readonly variable in C#?
+    The difference between a constant and readonly variable in C# is that a constant is a fixed value for the whole class whereas readonly is a fixed value
+    specific to an instance of a class and for each instance.
+ 
+  Local Variables in C#:
+    The Local Variables in C# are declared inside the method of a class. The scope of the local variable is limited to the method, which means you cannot
+    access it from outside the method. The initialization of the local variable is mandatory.
+    1) Scope of the Local Variables: Within the block in which it is declared.
+    2) The lifetime of the Local Variable: Until the control leaves the block in which it is declared.
+
+Program 5, 8
