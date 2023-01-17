@@ -1,0 +1,15 @@
+Control Flow Statements in C#
+  The Control Flow Statements in C# are the statements that Alter the Flow of Program Execution and provide better control to the programmer on the flow of
+  execution. The Control Flow Statements are useful to write better and more complex programs. A program executes from top to bottom except when we use 
+  control statements. We can control the order of execution of the program, based on logic and values.
+  Generally, the statements inside our C# program are executed from top to bottom, in the order that they appear. The Control flow statements, change or break
+  the flow of execution by implementing decision-making, looping, and branching in our program to execute particular blocks of code based on the conditions.
+
+  Types of Control Flow Statements in C#
+    In C#, the control flow statements are divided into the following three categories:
+    1) Selection Statements or Branching Statements: (Examples: if-else, switch case, nested if-else, if-else ladder)
+    2) Iteration Statements or Looping Statements: (Examples: while loop, do-while loop, for-loop, and foreach loop)
+    3) Jumping Statements: (Examples: break, continue, return, goto)
+
+  
+
