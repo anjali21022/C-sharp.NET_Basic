@@ -1,0 +1,41 @@
+Switch Statements in C#
+  The switch is a keyword in the C# language, and by using this switch keyword we can create selection statements with multiple blocks. And the Multiple blocks 
+  can be constructed by using the case keyword.
+  Switch case statements in C# are a substitute for long if else statements that compare a variable or expression to several values. The switch statement is a 
+  multi-way branching statement which means it provides an easy way to switch the execution to different parts of code based on the value of the expression.
+
+  When do we need to go for a switch statement?
+    When there are several options and we have to choose only one option from the available options depending on a single condition then we need to go for a 
+    switch statement. Depending on the selected option a particular task can be performed.
+
+  Syntax of Switch Statements in C# Language:
+    switch (variable)
+    {
+      Case 1:
+         //execute your code
+      break;
+      Case n:
+         //execute your code
+      break;
+      default:
+         //execute your code
+      break;
+    }
+
+  Is default block Mandatory in a Switch Statement?
+    No, the default block in the switch statement is not mandatory. If you are putting the default block and if any of the case statement is not fulfilled, then 
+    only the default block is going to be executed.
+
+  Why do we use Switch Statements instead of if-else statements in C#?
+    We use the switch statement instead of if-else statements because an if-else statement only works for a small number of logical evaluations of a value.
+    If you use an if-else statement for a larger number of possible conditions then, it takes more time to write and also becomes difficult to understand.
+
+  Nested Switch Statement in C#:
+    Whenever we create a switch statement inside another switch statement, then it is said to be a nested switch statement and this is allowed in C#.
+
+  The switch statement in C# only works with:
+    1)Primitive data types: bool, char, and integral type
+    2) Enumerated Types (Enum)
+    3) String Class
+    4) Nullable types of the above data types
+ 
