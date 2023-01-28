@@ -1,0 +1,73 @@
+If-Else Statements in C#
+  
+  What are Selection or Branching Control Flow Statements in C#?
+    The Selection or Branching or Decision-Making Statements in C# allows us to control the flow of program execution based on some condition. It executes
+    different sections of code depending on a specific condition. Selection statements can be divided into the following categories:
+    1) If-Else Statements
+    2) Switch Statements
+
+  If Statement in C# Language:
+    It executes a block of statements (one or more instructions) when the condition in the if block is true and when the condition is false, it will skip the
+    execution of the if block. Using else block is optional in C#. Following is the syntax to use the if block in the C# language. 
+    if (Condition)
+    {
+        statements;
+    }
+
+  If Else Statements in C# Language:
+    The If-Else block in C# Language is used to provide some optional information whenever the given condition is FALSE in the if block. That means if the 
+    condition is true, then the if block statements will be executed, and if the condition is false, then the else block statement will execute.
+    So, in simple words, we can say that, if we want to execute some statement(s) when the condition is true and we also want to execute some other statement(s) 
+    when the condition is false, then, in that case, we need to use IF-ELSE conditional statements in C#. Following is the syntax to use the IF ELSE block in
+    the C# language.
+    if (condition)
+    {
+       if statements;
+    }
+    else
+    {
+       else statements;
+    }
+
+  Is it mandatory to use else block?
+    No, it is not mandatory to use else block. It is an optional block. You can use only if block also. If you want to provide some information when the
+    condition failed, then you need to use this optional else block.
+
+  Nested If-Else Statements in C# Language:
+    When an if-else statement is present inside the body of another if or else then this is called nested if-else. Nested IF-ELSE statements are used when 
+    we want to check for a condition only when the previous dependent condition is true or false. 
+    
+    What is the Nested If block?
+      Nested if block means defining if block inside another if block. We can also define the if block inside the else blocks. Depending on our logic
+      requirements, we can use nested if block either inside the if block or inside the else. Please have a look at the below image which shows the different 
+      ways to use the nested if block in C# Language.
+      if ()              if ()
+      {                  {
+        if()             }
+        {                else
+        }                {
+        else                if()
+        {                   {
+        }                   }
+     }                   }
+
+  Ladder if-else statements in C# Language:
+    In Ladder if-else statements one of the statements will be executed depending upon the truth or false of the conditions. If the condition1 is true then
+    Statement 1 will be executed, and if condition2 is true then statement 2 will be executed, and so on. But if all conditions are false, then the last 
+    statement i.e. else block statement will be executed. The C# if-else statements are executed from top to bottom. As soon as one of the conditions controlling
+    the if is true, the statement associated with that if block is going to be executed, and the rest of the C# else-if ladder is bypassed. If none of the
+    conditions are true, then the final else statement will be executed.
+    if (condition)
+    {
+      else if (Condition 2)
+      {
+        statement 2;
+      }
+      ...
+      ...
+      ... 
+    }
+    else
+    {
+      statement n;
+    }
