@@ -1,0 +1,44 @@
+Loops in C#
+  Loops are also called repeating statements or iterative statements. Loops play an important role in programming. The Looping Statements are also called 
+  Iteration Statements. So, we can use the word Looping and Iteration and the meanings are the same.
+  
+  What is looping?
+    Looping in programming languages is a feature that facilitates the execution of a set of instructions repeatedly while some condition evaluates to true.
+    The process of repeatedly executing a statement or group of statements until the condition is satisfied is called looping. In this case, when the condition 
+    becomes false the execution of the loops terminates. The way it repeats the execution of the statements or instructions will form a circle that’s why iteration 
+    statements are called loops.
+    So, in simple words, we can say that Loop is nothing but repeating some tasks for some amount of time until the condition is true. 
+    There are two types of loops
+    1) Counter Loops
+    2) Conditional Loops
+
+  Loops Exist in our Daily Life.
+    Every day I woke up at 6 ->go jogging ->come home->take a bath->had breakfast-> went to college/office-> worked/learn->come back at 6-> watched tv/mobile->had dinner
+    -> went to sleep this routine is repeated every day without change and this we call it has loops in programming.
+    Here when you wake up tomorrow you will do the same thing and this continues until you are alive. So here condition to break the loop is you have to die.
+    Now let us explain what is the counter loop and conditional Loop.
+    1) Counter Loops are the loops, which execute a specific set of instructions a certain number of times. Example: Token system followed in hospitals where
+       the whole intention could be getting the headcount of patients.
+    2) Conditional Loops are the loops, which execute a specific task until the condition is true. Example: Attend the online classes until the covid-19 situation
+       comes to control.
+
+  Why do we need looping?
+    The basic purpose of the loop is code repetition. So, whenever the repetitions are required, then in place of writing the statements, again and again, we need
+    to go for looping.
+    The whole intention of using loops in programming is to make the developer’s job easy and make the code look clean and efficient. The developer goes for
+    loops whenever he wants to execute some instructions a certain number of times.
+
+  Types of Loops in C#
+    Iteration statements create loops in the program. It repeats the same code several times until a specified condition is satisfied. Iteration statements
+    execute the same set of instructions until a termination condition is met. There are four types of looping statements in C#. They are as follows:
+    1) For loop
+    2) For Each Loop
+    3) While loop
+    4) Do while loop
+
+  Loops are mainly divided into two categories:
+    1) Entry Controlled Loops: The loops in which the condition to be tested is present at beginning of the loop body are known as Entry Controlled Loops. 
+       Examples of Entry Controlled Loops are while loop and for loop.
+    2) Exit Controlled Loops: The loops in which the testing condition is present at the end of the loop body are termed Exit Controlled Loops. An example 
+       of Exit Controlled Loop is the do-while loop. In Exit Controlled Loops, the loop body will be evaluated at least one time as the testing condition is
+       present at the end of the loop body.
