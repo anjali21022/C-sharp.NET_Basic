@@ -1,0 +1,34 @@
+While Loop in C#
+  A while loop is used for executing a statement repeatedly until a given condition returns false. Here, statements may be a single statement or a block of statements.
+
+  While Loop Syntax in C# Language:
+    Following is the syntax to use the while loop in C# Language.
+    while(condition)
+    {
+       statements;
+    }
+
+  What is Pre-Checking Process or Entry-Controlled Loop?
+    The pre-checking process means before the evaluation of the statement block, the conditional part will be executed. When we are working with a while loop always pre-checking 
+    process will occur. The loop in which before executing the body of the loop if the condition is tested first then it is called an entry-controlled loop.
+    While loop is an example of an entry-controlled loop because in the while loop before executing the body first condition is evaluated if the condition is true then the body will 
+    be executed otherwise the body will be skipped.
+
+  Nested While Loop in C# Programming Language:
+    Writing a while loop inside another while loop is called nested while loop or you can say defining one while loop inside another while loop is called nested while loop. 
+    This is the reason why nested loops are also called “loops inside the loop”. There can be any number of loops inside one another with any of the three combinations depending on the
+    complexity of the given problem. In implementation when we need to repeat the loop body itself n number of times then we need to go for nested loops.
+
+  Nested While Loop Syntax in C# Language:
+    Following is the syntax to use the nested while loop in the C# language.
+    while (outer condition)
+    {
+      outer while statements;
+        while (inner condition)
+          {
+            inner while statements;
+          }
+      outer while statements;
+    }
+ 
+  
