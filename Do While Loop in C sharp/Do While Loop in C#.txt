@@ -1,0 +1,30 @@
+Do While Loop in C#
+  The do-while loop is a post-tested loop or exit-controlled loop i.e. first it will execute the loop body and then it will be going to test the condition.
+  That means we need to use the do-while loop where we need to execute the loop body at least once. The do-while loop is mainly used in menu-driven programs 
+  where the termination condition depends upon the end-user. That means when the end user wants then the loop is going to terminate.
+
+  Syntax to use Do While Loop in C# Language:
+    do 
+    {
+      statements;
+    }
+    while(condition);
+
+  While and do-while are almost the same. So, what is the difference? Which one do we use?
+    The difference between the do-while loop and the while loop in C# is that the do-while evaluates its test condition at the bottom of the loop whereas the 
+    while loop evaluates its test condition at the top. Therefore, the statements written inside the do-while block are executed at least once whereas we cannot
+    give a guarantee that the statements written inside the while loop are going to be executed at least once.
+    Note: When you want to execute the loop body at least once irrespective of the condition, then you need to use the do-while loop else you need to use the while loop.
+
+  Nested Do-While Loop in C# Language:
+    Using a do-while loop inside another do-while loop is called nested do-while loop. The syntax to use the nested do-while loop in C# language is given below.
+    do
+    {
+      statement n;
+      do
+      {
+        statement n;
+      }
+      while(test condition);
+    }
+    while(test expression);
