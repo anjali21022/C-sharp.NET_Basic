@@ -1,0 +1,48 @@
+For Loop in C#
+  For loop is one of the most commonly used loops in the C# language. If we know the number of times, we want to execute some set of statements or instructions, 
+  then we should use for loop. For loop is known as a Counter loop. Whenever counting is involved for repetition, then we need to use for loop.
+
+  Syntax to use For Loop in C# Language:
+    The for loop allows the execution of instructions for a specific amount of time. It has four stages.
+    1) Loop initialization
+    2) Condition evaluation
+    3) Execution of instruction
+    4) Increment/Decrement
+    Syntax:
+    for (initialization; condition; increment/decrement)
+    {
+      //C# instructions;
+    }
+  
+  Explanation of the for-loop syntax:
+    1) Loop Initialization: Loop initialization happens only once while executing the for loop, which means that the initialization part of for loop only executes once.
+       Here, initialization means we need to initialize the counter variable.
+    2) Condition Evaluation: Conditions in for loop are executed for each iteration and if the condition is true, it executes the C# instruction and if the condition is
+       false then it comes out of the loop.
+    3) Execution of Instruction: Once the condition is evaluated, and if the condition is true, then the control comes to the loop body i.e. the loop body is going to be executed.
+    4) Increment/Decrement: After executing the loop body, the increment/decrement part of the for loop will be executed, and once it executes the increment decrement part 
+       i.e. once it increments and decrements the counter variable, again it will go to the condition evaluation stage.
+
+  Points to Remember while working with for loop in C#:
+    1) When we are working with for loop always execution process will start from the initialization block. After the initialization block, the control will pass to the condition block.
+       If the condition is evaluated as true then control will pass to the statement block.
+    2) After execution of the statement block, the control will pass to the increment/decrement statement, from the increment/decrement statement, it will pass back to the condition statement.
+       Always repetition will happen beginning condition, statement block, and increment/decrement statement The initialization block will be executed only once when we are entering the loop for the first time.
+    3) When we are working with for loop everything is optional but mandatory to place 2 semicolons (;;).
+    4) While we are working with for loop if the condition part is not given then it will repeat infinite times because the condition part will replace it as non-zero. So it is always true as like for(; 1; )
+    5) In for loop also the pre-checking process will occur i.e. before the execution of the statement block (body of the for loop), the condition part will be executed.
+
+  Nested for Loop in C#:
+    When we created one for loop inside the body of another for loop, then it is said to be nested for loop in C# language. The syntax to use nested for loop is given below.
+    for(initialize counter;test condition;++ or --)
+    {
+      for(initialize counter;test condition;++ or --)
+      {
+        //inner for loop
+      }
+    }//outer for loop
+    Note: The point that you need to remember is when the inner for loop condition failed, then it will terminate the inner for loop only. And when the outer for loop condition failed, then it will terminate the outer for loop.
+
+  
+
+  
