@@ -1,0 +1,21 @@
+Break Statement in C#
+
+  What are Jump Statements in C# Language?
+    The Jump Statements in C# are used to transfer control from one point or location or statement to another point or location or statement in the program 
+    due to some specified condition while executing the program.
+    The Jump Statements in C# Language are used to modify the behavior of conditional (if, else, switch) and iterative (for, while, and do-while) statements. 
+    The Jump Statements allow us to exit a loop, and start the next iteration, or explicitly transfer the program control to a specified location in your program.
+    C# supports the following jump statements:
+    1) break
+    2) continue
+    3) goto
+    4) return (In the Function section we will discuss the return statement)
+    5) throw (In the Exception Handling section we will discuss the throw statement)
+
+  Break Statement in C# Language:
+    In C#, the break is a keyword. By using the break statement, we can terminate either the loop body or the switch body. The most important point that you need to 
+    keep in mind is the use of a break statement is optional but if you want to use then the break statement should be placed either within the loop body or switch body.
+
+  Syntax: break;
+
+  
