@@ -1,0 +1,6 @@
+Continue Statement in C#
+  In C#, continue is a keyword. By using the continue keyword, we can skip the statement execution from the loop body. Like the break statement, the use of 
+  the continue statement is also optional but if you want to use then you can use it only within the loop body.
+  The CONTINUE statement skips only the current loop iteration, and allows the next loop iteration to proceed.
+  The continue statement is almost always used with the if…else statement.
+  Syntax: continue;
