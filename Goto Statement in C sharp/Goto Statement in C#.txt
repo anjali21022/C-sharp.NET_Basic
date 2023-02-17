@@ -1,0 +1,12 @@
+Goto Statement in C#
+  The Goto Statement in C# is used to transfer the control to the labeled statement in the program. The label is a valid identifier and placed just before the statement 
+  from where the control is transferred. That means the goto Statement provides an unconditional jump from the goto to a labeled statement in the same function.
+  Goto is a keyword and by using this goto keyword we can pass the control anywhere in the program in the local scope. When we are working with the goto statement it required
+  an identifier called a label. Any valid identifier followed by a colon is called a label. Whenever we are working with a goto statement it is called an unstructured control 
+  flow statement because it breaks the rule of structure programming language.
+ 
+  Syntax to use goto statement in C# Language:
+  goto label;
+  ..
+  .
+  label: statement;
