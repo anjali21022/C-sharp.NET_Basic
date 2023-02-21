@@ -1,0 +1,113 @@
+Functions in C#
+  What are the Functions of C# Language?
+    A function is a group of related instructions that performs a specific task. It can be a small task or a big task but the function will perform that task completely.
+    Functions take some input as parameters and return the result as a return value. If we write a function then we can reuse the function multiple times in the program.  
+    That means functions allow us to reuse the code without retyping the code.
+
+  Why do we need functions?
+    Let us understand why we need functions with an example. Functions are also called modules or procedures. Instead of writing a single main program 
+    i.e. writing everything inside the main function, we can break the main function into small manageable size pieces and we can separate the repeating tasks or smaller tasks as a function.
+    For Example; if we write one program, and if we put everything inside the main function, then such type of programming approach is called Monolithic Programming.
+    If your main function contains thousands of lines of code, then it is becoming very difficult to manage. This is actually not a good programming approach.
+
+  Problems in Monolithic Programming:
+    1) First problem: if there is an error in a single line then it’s an error in the entire program or entire main function.
+    2) Second problem: 10000 lines of code, we cannot finish it in one hour or one day, it might take a few days and throughout the time we should remember everything.
+       Then only we can make changes or write new lines in the program. So, we should memorize the whole program.
+    3) Third problem: How many people can write this one single main function? Only one person can write. We cannot make it as teamwork and more than one people can’t work on the same main function.
+       So, work cannot be distributed in a team.
+    4) Fourth problem: when this program becomes very big, it may fit in some computer memories and it may not fit in some of the memories. It Depends on the size and depends on the hardware
+       contribution of the computer on which you are running.
+    So, these are the few problems due to monolithic programming. Monolithic means everything is a single unit.
+    If we broke the program into smaller tasks, i.e. into many smaller functions and each function performs a specific task, then such type of programming is called “modular programming” or
+    “procedural programming” and this approach is good for development.
+
+  Types of Functions in C#:
+    Basically, there are two types of Functions in C#. They are as follows:
+    1) Built-in Functions
+    2) User-Defined Functions
+    Note: The function which is already defined in the framework and available to be used by the developer or programmer is called a built-in function whereas if the function is defined by the 
+    developer or programmer explicitly then it is called a user-defined function.
+
+  Advantages of Using Standard Library functions in C# Language:
+    1) One of the most important reasons you should use library functions or built-in functions is simply because they work. These built-in functions or pre-defined functions have already gone
+       through multiple testing phases and are easy to use.
+    2) The built-in functions are optimized for performance. So, you will get better performance with built-in functions. Since, the functions are “standard library” functions, a dedicated group
+       of developers constantly working on them to make them better.
+    3) It saves development time. Since the general functions like printing to a screen, calculating the square root, and many more are already written. You shouldn’t worry about creating them once again.
+       You just need to use them and save your time.
+
+  What are the limitations of Pre-Defined Functions in C# Language?
+    All the predefined functions in C# are contained limited tasks only i.e. for what purpose function is designed for the same purpose it should be used. So, whenever a predefined function is not
+    supporting our requirements then we need to go for user-defined functions.
+
+  What are User-Defined Functions in C# Language?
+    The User-defined functions in C# are the functions that are created by the programmer so that he/she can use it many times. It reduces the complexity of a big program and optimizes the code. C# allows
+    you to define functions according to your need. The function whose body is implemented by the developer or user is called a user-defined function.
+    As per client or project requirements, the functions we are developing are called user-defined functions. Always user-defined functions are client-specific functions or project-specific functions only.
+    As a programmer, we are having full control of user-defined functions. As a programmer, it is possible to alter or modify the behavior of any user-defined functions if it is required because the coding part is available.
+
+  Advantages of User-Defined Functions in C#:
+    1) The application code will be easier to understand, maintain, and debug.
+    2) We can write the code once and we can reuse the code in many places i.e. code reusability.
+    3) Program size reduced. As the duplicate code is put inside a single function, the size of the application code is going to be reduced.
+
+  How to Create a User-Defined Function in C#?
+    Let us see how to write a function in C#. First of all, the function should have a name that is mandatory. Then it should have a parameter list (the parameters it is taking) which is optional,
+    then the function should have a return type which is mandatory. A function can have an access specifier which is optional and a modifier which is also optional.
+    Here,
+    1) Function Name: It is mandatory and it defines the name of the method or function. The method signature consists of the method name and parameter list. The Methods are identified by their name.
+       The rules for giving function names are the same as the rules for giving the variable names. Same rules you should follow for giving function names also.
+    2) Parameter List: It is Optional and it defines the list of parameters. A function can take 0 or more parameters means it may not take any input.
+    3) Return Type: It is Mandatory and it defines the return type value of the method. A function may or may not return a value but it can return at most one value. It cannot return multiple values
+       but it can take multiple values as parameters. If the function is not returning any value, then the return type should be void.
+    4) Access Specifier: It is Optional and it defines the scope of the method. That means it defines the accessibility of the method such as private, protected, public, etc.
+    5) Modifier: It is optional and defines the type of access to the method. For example, static, virtual, partial, sealed, etc. If you declare the method with a static modifier, then you can access
+       the method directly without creating an instance. If you declare the method with the sealed modifier, then this method is not going to be overridden under a child class. And if you declare the 
+       method with the partial modifier, then you can split the method definition into two parts.
+    6) Function Body: The body of the function defines the code or list of statements that you need to execute the function call. It is enclosed within curly braces.
+    Note: Access Specifiers and Modifiers are not the same. Method and Function, both are the same, so we can use the term Method and Function interchangeability.
+
+  Example to Create User-Defined Function in C#:
+    public int max(int x, int y)
+    {
+      if ( x > y)
+      {
+        return x;
+      else
+        return y;
+      }
+    }
+    In the above example,
+      public is the access specifier
+      int is the return type
+      max is the Method Name
+      (int x, int y) is the Parameters list
+      And this method does not have any modifiers.  
+
+  What is Function Signature in C#?
+    In C# programming language, a Method Signature is consisting of two things i.e. the Method Name and the Parameter List. The return type is not considered to be a part of the method signature.
+
+  What is Return Statement in C#?
+    The return statement terminates the execution of a function immediately and returns the control to the calling function. Execution resumes in the calling function at the point immediately following the call.
+    A return statement can also return a value to the calling function. A return statement causes your function to exit and return a value to its caller. In general, the function takes inputs and returns some value.
+    The return statement is used when a function is ready to return a value to its caller.
+
+  How to Call a Method in C#?
+    When a method is invoked (called), a request is made to perform some action, such as setting a value, printing statements, performing some complex calculation, doing some database operation, returning some data, etc.
+    The code that we need to invoke a method contains the name of the method to be executed and any data that the receiving method requires. The required data for a method is specified in the method’s parameter list.
+    When we invoke a method, the control gets transferred to the called method. Then the called method returns the control to the caller method (from where we call the method) in the following three conditions.
+    1) When the return statement is executed.
+    2) When it reaches the method ending closing curly brace.
+    3) When it throws an exception that is not handled in the called method.
+
+  
+
+  
+
+  
+
+  
+
+  
+  
