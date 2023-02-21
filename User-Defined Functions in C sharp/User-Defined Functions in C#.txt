@@ -1,0 +1,76 @@
+User-Defined Functions in C#
+  There are four types of user-defined functions in C#. They are as follows:
+    1) Functions with No Argument and No Return Type.
+    2) Functions with Argument and No Return Type.
+    3) Functions with No Argument and with Return Type.
+    4) Functions with Argument and with Return Type.
+    Let us understand each of these function types with examples.
+
+  No Arguments Passed and No Return Value Function in C#:
+    When a function has no arguments, it does not receive any data from the calling function. Similarly, when it does not return a value, the calling function 
+    does not receive any data from the called function. So, there is no data transfer between the calling function and the called function. A function that does 
+    not return any value cannot be used in an expression. It can only be used as an independent statement.
+
+  No Arguments Passed but Return a Value Function in C#:
+    When a function has no arguments, it does not receive any data from the calling function, but it returns a value, the calling function receives the data from
+    the called function. So, there is no data transfer between the calling function to called function but data transfer from the called function to the calling function.
+    The called function is executed line by line in a normal fashion until the return statement is encountered.
+
+  Argument Passed but no Return Value Function in C# Language:
+    When a function has arguments, it receives data from the calling function, but it does not return any value. So, there is data transfer between the calling function
+    to called function and but there is no data transfer from the called function to the calling function. The nature of data communication between the calling function
+    and the called function with arguments but no return value.
+
+  Argument Passed and Return Value Function in C# Language:
+    A self-contained and independent function should behave like a “black box” that receives an input and outputs a value. Such functions will have two-way data communication.
+
+  What is Function Overloading in C#?
+    In C#, we can write more than one function with the same name but with a different argument or parameter list, and when we do so, it is called function overloading.
+    Let us understand this with an example.
+      static void main(){
+        int a = 10, b = 2, c;
+        c = add(a, b);
+      }
+    This is our main function. Inside this function, we have declared 3 variables. Next, we are storing the result of the ‘add()’ function in the ‘c’ variable.
+    The following is the add function.
+      static int add(int x, int y){
+        return x + y;
+      }
+    Here we haven’t declared any variable, simply return ‘x + y’. When we call the ‘add’ function inside the main function, then a will be copied in ‘x’ and ‘b’ will be copied in ‘y’
+    and it will add these two numbers and the result will store in ‘c’. Now we want to write one more function here,
+      static int add(int x, int y, int z){
+        return x + y + z;
+      }
+    We have changed the main function as follows.
+      static void main(){
+      int a = 10, b = 2, c, d;
+       c = add (a, b);
+       d = add (a, b, c);
+      }
+    Here we have created another function with the same name that is ‘add’ but it is takes 3 parameters. Inside the main function, we have called ‘add(x,y,z)’ and stored the result in the ‘d’ variable.
+    So, we can have two functions with the same name but with different parameters
+    So when we call “add(a, b)” it will be calling add(int x, int y) and when we call ‘add(a, b, c)’ it will be “add(int x, int y, int z)”. The C# compiler can differentiate between these two functions,
+    and this is the concept of function overloading in C#.
+
+  Advantages of Function Overloading in C#
+    The benefit here is that we don’t have to think of new names every time. As both the functions are for adding integers, so we don’t have to give different names. It is easy for writing the programs
+    and you don’t have to remember too many function names. That is the benefit we are getting now. Let us declare one more add function which returns the sum of two float numbers.
+    static float add(float x, float y){
+        return x + y;
+    }
+    This function will return the float type value. Now we have two add functions that are taking the same number of parameters. Is it possible in C#? Yes, two functions can have the same name and the 
+    same number of parameters but the data type of the parameters should be different. They cannot be the same.
+    So int add (int x, int y) and float add (float x, float y) are two different functions. In C# two functions are said to be different if they have the same name but different parameters list.
+
+  How the Parameters list can be different?
+    Either the data type of the parameter or the number of parameters. For a better understanding, please have a look at the below image.
+    Above are the signatures of the different ‘add’ functions. Now let us check which is valid or which is invalid.
+    1) int add(int, int) is valid, it is taking 2 ‘int’ type parameters and returning the ‘int’ value.
+    2) float add(float, float) is valid as it is taking 2 ‘float’ parameters and return the ‘float’ value. It is taking the same number of parameters but different data types as compared to the first one.
+    3) int add(int, int, int) is valid as it is taking 3 ‘int’ parameters and returning the ‘int’ value. It is taking a different number of parameters but has the same data types as compared to the first one.
+    4) float add(int, int) is invalid, it is the same as the first function which is taking the same number of parameters and the same type of parameters. So, this is invalid. It doesn’t matter what type of
+       data a function is returning. If two functions have the same number of parameters and of the same types then this is invalid.
+
+  
+  
+  
