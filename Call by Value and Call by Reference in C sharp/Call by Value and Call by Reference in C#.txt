@@ -1,0 +1,26 @@
+Call by Value and Call by Reference in C#
+  Call By Value in C#
+    In .NET Framework, by default, all the objects are called by value, not called by reference. So, whether it is a Value Type (Primitive data types like int, char, double, etc.)
+    or Reference Data Type (class, interface, delegate, string, etc.), they are by default going to be called by value.
+
+  Call By Reference in C#
+    Let us understand Call by Reference or Pass by Reference with both value type as well as with reference type in C# with examples. For call by reference, we need to prefix the
+    parameter with the ref keyword.
+
+  Difference between Call by Value and Call by Reference in C#:
+    The most important point that you need to remember is that in C#, all objects/values are call by value by default, not by reference, regardless of whether they’re Value Types 
+    or Reference Types. With this kept in mind, let us proceed and see the differences.
+    
+    Call By Value in C#:
+      1) In Call by Value, the copy of the original variable is passed to the called function.
+      2) In Call by Value, the value of the original parameter is copied into the parameter of the function. As a result, if we do any modifications to formal parameters,
+         they don’t have any impact on the actual parameter.
+      3) It will not allow you to change the actual variables using function calls.
+      4) The memory location referred to by formal parameters and actual arguments is different.
+      5) It doesn’t require a ref or out keyword in C#.
+    Call By Reference in C#:
+      1) In Call by Reference, the reference (or the actual address) of the variable is passed to the called function.
+      2) In Call by Value, the formal parameter and the actual parameter both point to the same memory address. As a result, any changes made to the formal parameters are also reflected in the actual parameters.
+      3) It allows you to change the actual variable’s value using function calls.
+      4) The memory location referred to by formal parameters and actual arguments are the same
+      5) It requires a ref or out keyword to achieve call by reference in C#.
