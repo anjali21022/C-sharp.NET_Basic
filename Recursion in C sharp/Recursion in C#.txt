@@ -1,0 +1,17 @@
+Recursion in C#
+  What does it mean by Recursive Function in C#?
+    Function calling itself is called Recursion. Or in simple words we can say that recursion is a process in which a function calls itself repeatedly until
+    some specified condition has been satisfied. It is similar to a loop, in the loop, as long as the loop condition is satisfied, the loop executes and in the 
+    same manner, as long as the condition is satisfied, the function will call itself.
+
+  What are the advantages of Recursion in C# Language?
+    1) Function calling-related information will be maintained by recursion.
+    2) Stack evaluation will take place by using recursion.
+    3) Prefix, postfix, and infix notation will be evaluated by using recursion
+  
+  What are the disadvantages of Recursion in C# Language?
+    1) It is a very slow process due to stack overlapping.
+    2) The recursive program can create stack overflow.
+    3) The recursive program can create infinite loops.
+
+  
