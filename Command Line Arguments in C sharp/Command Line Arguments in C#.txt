@@ -1,0 +1,22 @@
+Command Line Arguments in C#
+  Command Line Arguments in C#:
+    We know that we can pass parameters to a function as an argument but what about the Main(string[] args) method? Can we pass parameters to the Main() method in C#?
+    Yes, we can pass parameters to the Main() method and this is possible through Command Line Arguments in C#. The arguments which are passed by the user or programmer
+    to the Main() method are termed as Command-Line Arguments in C#.
+    The Main() method is the starting point from where the program execution starts. The most important point that you need to remember is that the main method doesn’t
+    accept any parameter from any method. It only accepts parameters through the Command-Line. If you notice the Main method signature, it has a string array type parameter
+    that can accept n number of parameters at runtime. In Main(string[] args), args is a string type of array that can hold numerous parameters.
+
+  Important Points:
+    1) Command Line Arguments are captured into the string array i.e. args parameter of the Main method.
+    2) In General, the Command Line Arguments are used to specify configuration information while launching your application.
+    3) Information is passed as strings.
+    4) There is no restriction on the number of command line arguments. You can pass 0 or n number of command line arguments.
+
+  Passing Numeric Command Line Arguments in C#
+    In C#, Command Line Arguments are always stored as strings and always separated by spaces. The Main() method of every C# application can only accept string arguments.
+    If an application needs to support a numeric command-line argument, then what do you need to do? You need to pass the numeric number as a string and in your application,
+    it is your responsibility to convert that string to numeric. And, hence it is possible to pass numeric arguments through the command line. However, we can later convert
+    string arguments into numeric values.
+
+  
