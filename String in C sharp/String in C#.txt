@@ -1,0 +1,33 @@
+String in C#
+  What is a String?
+    In C#, the string is an object of the String class that represents a sequence of characters. We can perform many operations on strings such as
+    concatenation, comparison, getting substring, search, trim, replacement, etc.
+
+  Strings are reference types in C#:
+    Strings in C# are reference types i.e. they are not normal data types or you can say they are not like other primitive data types. For example,
+    if we define some variables using int or double data types as shown below.
+    Then if you right-click on the data type and go to the definition then you will see that they are struct as shown in the below image. Struct means they are value type.
+    
+    On the other hand, if you define a variable with string data type as shown below.
+    Then if you right-click on the string data type and click on go to definition then you will see that it is a class. Class means reference data type.
+    So, the first point that you need to remember is strings are reference types while other primitive data types are struct types i.e. value type in C#.
+
+  What are the Differences between String(Capital) vs string(small) in C#?
+    In C#, you can use the string in two ways i.e. you can use the string using capital S (i.e. String) or by using the small “s” (i.e. string) as shown in the below image.
+    Now the question that should come to your mind is what is the difference between these two (string vs String) in C#. Let’s understand this. The small string is actually
+    an alias of String (Capital string). If you right-click on the small string and if you go to the definition then you will see that the actual class name is a capital string
+    i.e. String as shown in the below image.
+    You can use any one of them i.e. either string or String. But as per the naming convention when you are creating a variable use the small string (i.e. string) and whenever
+    you want to invoke methods on the string then use the capital string (i.e. String) as shown in the below image.
+
+  String Intern in C#:
+    The String Intern in C# is a process that uses the same memory location if the value is the same. In our example, when the loop executes for the first time,
+    it will create a fresh object and assign the value “DotNet Tutorials” to it. When the loop executes 2nd time, before creating a fresh object,
+    it will check whether this “DotNet Tutorials” value is already there in the memory, if yes then it simply uses that memory location else it will create a new memory location.
+    This is nothing but C# string interning.
+    So, if you are running a for loop and assigning the same value again and again, then it uses string interning to improve the performance. In this case,
+    rather than creating a new object, it uses the same memory location. But when the value changes it will create a new fresh object and assign the value to the new object.
+
+  Why do they make C# String Immutable?
+    Now the question is why they made strings as Immutable in C#. They made Strings Immutable for Thread Safety. Think of one situation where you have many threads and all the 
+    threads want to manipulate the same string object as shown in the below image. If strings are mutable then we have thread-safety issues.
