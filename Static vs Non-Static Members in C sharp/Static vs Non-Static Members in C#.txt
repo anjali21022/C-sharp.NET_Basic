@@ -1,0 +1,47 @@
+Static vs Non-Static Members in C#
+  What are Static and Non-Static Members in C#?
+    The member of a class is divided into two categories
+    1) Static Members
+    2) Non-Static Members
+    The members (Variables, Constructors, and Methods) which are created by using the static modifier are called static members rest of all are called non-static members.
+    In other words, we can also define that, the members of a class that does not require an instance either for initialization or execution are known as the static member.
+    On the other hand, the members which require an instance of a class for both initialization and execution are known as non-static members.
+
+  Understanding Static and Non-Static Variables in C#
+    Whenever we declare a variable by using the static modifier or when we declare a variable inside of any static block then those variables are considered static variables
+    whereas the rest of the others are considered non-static variables.
+    A static variable gets initialized only once during the life cycle of a class whereas a non-static variable gets initialized either 0 or n number of times, depending on
+    the number of objects created for that class.
+    If you want to access the static members of a class, then you need to access them directly within the same class and use the class name from outside the class whereas
+    you need an instance of a class to access the non-static members.
+
+  What is the Scope of Static and Non-Static Variables in C#?
+    The Non-Static variables are created when the object is created and are destroyed when the object is destroyed. The object is destroyed when its reference variable is
+    destroyed or initialized with null. So, we can say that the scope of the object is the scope of its referenced variables. On the other hand, the Static Variable scope
+    is the Application Scope. What it means, as soon as the application start and class execution starts, static variables are created and they will be there as long as
+    your application is running. Once the application stops, then static variables are going to be deleted. So, the scope is application scope.
+
+  Static and Non-Static Methods in C#
+    When we create a method by using the static modifier then it is called the static method and the rest of the methods are non-static methods. You cannot consume the
+    non-static members directly within a static method. If you want to consume any non-static members with a static method then you need to create an object and then
+    through the object, you can access the non-static members. On the other hand, you can directly consume the static members within a non-static method without any restriction.
+
+  Rules to follow while working with Static and Non-Static Members in c#:
+    1) Non-Static to Static: Non-Static Members can be consumed only by using the object of that class inside a static block.
+    2) Static to Static: Static Members can be consumed directly (within the same class) or by using the class name (from outside the class) inside another static block.
+    3) Static to Non-Static: Static Members can be consumed directly or by using the class name inside a Non-Static block.
+    4) Non-Static to Non-Static: Non-Static Members can be consumed directly or by using the “this” keyword inside another non-static block.
+
+  Understanding Static and Non-Static Constructors in C#:
+    If we create the constructor explicitly by the static modifier, then we call it a static constructor and the rest of the others are non-static constructors.
+    The most important point that you need to remember is the static constructor is the first block of code that gets executed under a class. No matter how many 
+    numbers of objects you created for the class the static constructor is executed only once. On the other hand, a non-static constructor gets executed only
+    when we created the object of the class and that is too for each and every object of the class.
+    It is not possible to create a static constructor with parameters. This is because the static constructor is the first block of code that is going to execute
+    under a class. And this static constructor is called implicitly, even if parameterized there is no chance of sending the parameter values.
+
+  Static Class in C#:
+    The class which is created by using the static modifier is called a static class in C#. A static class can contain only static members. It is not possible to
+    create an instance of a static class. This is because it contains only static members. And we know we can access the static members of a class by using the class name.
+
+  
