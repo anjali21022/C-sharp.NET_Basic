@@ -1,0 +1,43 @@
+Const and Read-Only in C#
+  According to MSDN
+    The Constants variables are the immutable values that are known at the time of program compilation and do not change their values for the lifetime of the program.
+    The Read-only variables are also immutable values but these values are known at runtime and also do not change their values for the life of the program.
+    With this definition keep in mind, let’s try to understand the const and readonly with some examples and let us try to understand the difference between them.
+
+  Constant Variables in C#:
+    In C#, if we declare a variable by using the const keyword, then it is a constant variable and the value of the constant variable can’t be modified once
+    after its declaration. So, it is mandatory to initialize the constant variable at the time of its declaration only. Suppose, you want to declare a constant
+    PI in your program, then you can declare the constant variable as follows:
+    const float PI = 3.14f;
+    If you are not initializing the const variable at the time of its declaration, then you will get a compiler error.
+    Note: The constant variables are going to be created one and only one time. This is because we cannot modify the constant values once after its declaration.
+    If it allows creating multiple copies of the constant variable, then all those copies are going to store the same value which means it is a waste of memory.
+    So, when we cannot modify a value, and if we are creating the same copy multiple times, then it is a waste of resources.
+    The behavior of constant variable is similar to the behavior of static variables i.e. initialized once and only one time in the life cycle of a class and
+    does not require an instance of a class either for initialization or execution.
+
+  Points to Remember while Working with Const Variable in C#:
+    1) The keyword const is used to create a “constant” variable. It means it will create a variable whose value is never going to be changed.
+       In simple words, we can say that the variable whose value cannot be changed or modified once after its declaration is known as a constant variable.
+    2) Constants are static by default.
+    3) It is mandatory to initialize a constant variable at the time of its declaration.
+    4) The behavior of a constant variable is the same as the behavior of a static variable i.e. maintains only one copy in the life cycle of the class and
+       initializes immediately once the execution of the class start (object not required)
+    5) The only difference between a static and constant variable is that the static variables can be modified whereas the constant variables in C# can’t be modified once it is declared.
+
+  Read-Only Variables in C#
+    When we declare a variable by using the readonly keyword, then it is known as a read-only variable and these variables can’t be modified like constants but after initialization. 
+    That means it is not mandatory to initialize a read-only variable at the time of its declaration, they can also be initialized under the constructor.
+    That means we can modify the read-only variable value only within a constructor.
+    The behavior of read-only variables will be similar to the behavior of non-static variables in C#, i.e. initialized only after creating the instance of the class and once for each 
+    instance of the class is created. So, we can consider it as a non-static variable, and to access readonly variables we need an instance.
+
+  Points to Remember while working with Read-Only Variable in C#:
+    1) The variable which is created by using the readonly keyword is known as a read-only variable in C#. The read-only variable’s value cannot be modified once after its initialization.
+    2) It is not mandatory or required to initialize the read-only variable at the time of its declaration like a constant. You can initialize the read-only variables under a constructor
+       but the most important point is that once after initialization, you cannot modify the value of the readonly variable outside the constructor.
+    3) The behavior of a read-only variable is similar to the behavior of a non-static variable. That is, it maintains a separate copy for each object. The only difference between these 
+       two is that the value of the non-static variable can be modified from outside the constructor while the value of the read-only variable cannot be modified from outside the constructor body.
+
+  What is the difference between a constant and readonly variable in C#?
+    The difference between a constant and readonly variable in C# is that a constant is a fixed value for the whole class whereas readonly is a fixed value specific to an instance of a class and for each instance.
