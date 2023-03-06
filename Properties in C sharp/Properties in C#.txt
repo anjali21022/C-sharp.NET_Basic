@@ -1,0 +1,122 @@
+Properties in C#
+  Why do we need Properties in C#?
+    In order to encapsulate and protect the data members (i.e. fields or variables) of a class, we use properties in C#. The Properties in C# are used as a
+    mechanism to set and get the values of data members of a class outside of that class. If a class contains any values in it and if we want to access those
+    values outside of that class, then we can provide access to those values in 2 different ways. They are as follows:
+    1) By storing the value under a public variable, we can give direct access to the value outside of the class.
+    2) By storing that value in a private variable, we can also give access to that value outside of the class by defining a property for that variable.
+
+  What is a Property in C#?
+    A Property in C# is a member of a class that is used to set and get the data from a data field (i.e. variable) of a class. The most important point that
+    you need to remember is that a property in C# is never used to store any data, it just acts as an interface or medium to transfer the data. We use the
+    Properties as they are public data members of a class, but they are actually special methods called accessors.
+
+  What are Accessors in C#?
+    The Assessors are nothing but special methods which are used to set and get the values from the underlying data member (i.e. variable) of a class.
+    Assessors are of two types. They are as follows:
+    1) Set Accessor
+    2) Get Accessor
+
+  What is a Set Accessor?
+    The set accessor is used to set the data (i.e. value) into a data field i.e. a variable of a class. This set accessor contains a fixed variable named value.
+    Whenever we call the property to set the data, whatever data (value) we are supplying will come and store inside the variable called value by default.
+    Using a set accessor, we cannot get the data.
+    Syntax: set { Data_Field_Name = value; }
+
+  What is Get Accessor?
+    The get accessor is used to get the data from the data field i.e. variable of a class. Using the get accessor, we can only get the data, we cannot set the data.
+    Syntax: get {return Data_Field_Name;}
+
+  What are the Different types of Properties Supported by C#.NET?
+    The C#.NET supports four types of properties. They are as follows
+    1) Read-Only Property
+    2) Write Only Property
+    3) Read Write Property
+    4) Auto-Implemented Property
+    Let us understand each of the above properties in detail with examples.
+
+    What is Read-only Property in C#?
+      The Read-Only Property is used to read the data from the data field i.e. read the data of a variable. Using this Read-Only Property, we cannot set
+      the data into the data field. This property will contain only one accessor i.e. get accessor.
+      Syntax:
+      AccessModifier Datatype PropertyName
+      {
+         get {return DataFieldName;}
+      }
+
+    What is Write only Property in C#?
+      The Write-Only Property is used to write the data into the data field i.e. write the data to a variable of a class. Using this Write-Only Property, 
+      we cannot read the data from the data field. This property will contain only one accessor i.e. set accessor.
+      Syntax:
+      AccessModifier Datatype PropertyName
+      {
+        set {DataFieldName = value;}
+      }
+
+    What is Read Write Property in C#?
+      The Read-Write Property is used for both reading the data from the data field as well as writing the data into the data field of a class.This property
+      will contain two accessors i.e. set and get. The set accessor is used to set or write the value to a data field and the get accessor is read the data from a variable.
+      Syntax:
+      AccessModifier Datatype PropertyName
+      {
+         set {DataFieldName = value;}
+         get {return DataFieldName;}
+      }
+    Note: Whenever we create a property for a variable, the data type of the property must be the same as the data type of the variable. A property can never accept any argument.
+
+  What are the advantages of using Properties in C#?
+    1) Properties will provide the abstraction to the data fields.
+    2) They also provide security to the data fields.
+    3) Properties can also validate the data before storing it in the data fields.
+
+  What is the Default Accessibility Specifier of Accessors in C#?
+    The default accessibility specifier of the accessor is the same as the accessibility specifier of the property. For example:
+    public int EmpId
+    {
+      set { _EmpId = value; }
+      get {  return _EmpId; }
+    }
+    In the above example, the property Empid is declared as public. So, the set and get accessor will be public. If the property is private then both set and get accessors will also be private.
+
+  What are symmetric and asymmetric accessors in C#?
+    If the accessibility specifier of the accessors (both get and set) are the same within a property accessibility specifier then the accessors are known as symmetric accessors. On the other hand,
+    if the accessibility specifier of the accessors is not the same as a property accessibility specifier, then the accessors are known as asymmetric accessors. For example:
+    public int EmpId
+    {
+       protected set { _EmpId = value; }
+       get { return _EmpId; }
+    }
+
+    In the above property, the set accessor is declared as protected while the get accessor is public by default, so they are known as asymmetric. In general, asymmetric accessors are used in the
+    inheritance process. We will discuss this in detail when we discuss Inheritance OOPs Principle in C#.
+    We can also write the Read-only property using two accessors as follows.
+    public int EmpId
+    {
+       private set { _EmpId = value; }
+       get { return _EmpId; }
+    }
+
+    We can also write the Write only property using two accessors as follows.
+    public int EmpId
+    {
+       set { _EmpId = value; }
+       private get { return _EmpId; }
+    }
+
+    Note: The point that you need to remember is once you declare the accessor as private, then you cannot access that accessor from outside the class.
+
+  What are Auto-Implemented Properties in C#?
+    If you do not have any additional logic while setting and getting the data from a data field i.e. from a variable of a class, then you can make use of the auto-implemented properties
+    which was introduced as part of C# 3.0. The Auto-Implemented Property in C# reduces the amount of code that we have to write. When we use auto-implemented properties, then the C# compiler
+    implicitly creates a private, anonymous field or variable for that property behind the scene which is going to hold the data.
+    Syntax: Access_specifier Datatype Property_Name { get; set; }
+    Example: public int A { get; set; }
+
+  Problems with the above public fields are as follows
+    1) An ID value should always be a non-negative number.
+    2) The name cannot be set to NULL.
+    3) If a student’s name is missing then we should return “No Name”.
+    4) The PassMark value should always be read-only.
+    5) The Programming Languages like C++, and Java does not have the concept properties and such programming languages use getter and setter methods to encapsulate and protect fields.
+  
+
