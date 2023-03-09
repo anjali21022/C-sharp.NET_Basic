@@ -1,0 +1,16 @@
+Override Equals Method in C
+  What is Equals Method in C#?
+    The Equals is a virtual method defined in the Object class and this method is available to all the .NET Types as Object is the superclass of all .NET Types.
+    As Equals is a virtual method, we can also override this method under our classes. The following is the signature of this method.
+    public virtual bool Equals(object obj): This method is used to determine whether the specified object is equal to the current object. 
+    Here, the parameter obj specifies the object to compare with the current object. It returns true if the specified object is equal to the current object; otherwise, false.
+    Before understanding how to override and when to override, let us first understand what is the difference between the == Operator and Equals method in C#.
+
+  Difference Between the “==” Operator and the Equals() Method in C#:
+    As we already discussed every type in .NET, directly or indirectly inherits from the Object class. So, the Equals() virtual method, which has a default implementation
+    within the Object class is also available in every .NET (Primitive as well as Reference) type via inheritance. 
+
+  Equals method and == Operator with Reference Type in C#:
+    If the type is a reference type, then by default both the == operator and Equals method check for reference equality whereas we can change this default behavior
+    of the Equals() method by overriding it to check for value equality.
+
