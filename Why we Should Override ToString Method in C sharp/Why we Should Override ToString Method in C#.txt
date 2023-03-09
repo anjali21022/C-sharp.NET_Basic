@@ -1,0 +1,16 @@
+Why we Should Override ToString Method in C#
+  Understanding the Object Class in C#:
+    The Object class is the Superclass of all dot net types. That means, all the types in .NET Framework are inherited directly or indirectly from the Object class.
+    Because of this inheritance, every type in .NET inherits the ToString() method from the Object class. If you go to the definition of Object class,
+    then you will see that the ToString() method is defined as a Virtual Method which allows this method to be overridden in the child classes.
+    Not only the ToString method but also you can override the Equals method.
+
+    Note: Every type in .NET is implicitly inherited from the Object class and hence all the public and protected members of the object class (excluding private members)
+    are inherited into the child class and by using the child class object we can access all the public and protected members of the object class in C#.
+    For example, int is a primitive type and string a reference type and both of these two types are inherited from the Object class, and hence using the variable of int
+    and string type, we can access all the public and protected members of the object class.
+
+    In other words, we can say that each and every class type (Reference Types) or struct type (Value Types) are directly or indirectly implicitly inherited from the Object class in C#.
+    Therefore, every object in C# gets the ToString method, which returns a string representation of that object. So, the ToString() method returns a string that represents the current object.
+
+  
