@@ -1,0 +1,53 @@
+Stack and Heap Memory in C#
+  What happens internally when we declare a variable in .NET Application?
+    When we declare a variable in a .NET application, it allocates some memory in the RAM. The memory that it allocates in RAM has three things are as follows:
+    1) Name of the variable,
+    2) The data type of the variable, and
+    3) Value of the variable.
+
+  Why do we have two types of memory?
+    As we know, in C#, the primitive data types such as int, double, bool, etc. just hold a single value. On the other hand, the reference data types or
+    object data types are complex i.e. an object data type or reference data type can have reference to other objects as well as other primitive data types.
+    So, the reference data type holds references to other multiple values, and each one of them must be stored in memory. Object types need dynamic memory 
+    while primitive data types need static memory. 
+
+  Value types and reference types in .NET
+    As we understood the concept of Stack and Heap, Now, let us move forward and understand the concept value types and reference types in detail.
+    The Value types are the types that hold both data and memory in the same location. On the other hand, a reference type is a type that has a pointer
+    that points to the actual memory location.
+
+  Understanding Value Type in C#:
+    Let us understand value type with an example. Please have a look at the following image. As you can see in the image, first we create an integer 
+    variable with the name x and then we assign this x integer value to another integer variable whose name is y. In this case, the memory allocation 
+    for these two variables will be done inside the stack memory.
+
+    public void SomeMethod()
+    {
+      int x = 101;
+      int y = x;
+    }
+
+    In .NET, when we assign one integer variable value to another integer variable, then it creates a completely different copy in the stack memory
+    that’s what you can see in the above image. So, if you change one variable value, then the other variable will not be affected.
+    In .NET these kinds of data types are called ‘Value types’. So, bool, byte, char, decimal, double, enum, float, long, sbyte, int, short, ulong,
+    struct, uint, ushort are examples of value types.
+
+  Understanding Reference Type in C#:
+    Let us understand reference type with an example. Please have a look at the following image. Here, first, we create an object i.e. obj1) and then assign
+    this object to another object i.e. obj2. In this case, both reference variables (obj1 and obj2) will point to the same memory location.
+
+    public void SomeMethod()
+    {
+      SomeClass obj1 = new SomeClass();
+      SomeClass obj2 = obj1;
+    }
+
+    In this case, when you change one of them, the other object is also gets affected. These kinds of data types are termed as ‘Reference types’ in .NET.
+    So, class, interface, object, string, and delegate are examples of Reference Types.
+
+  How is the heap memory freed up?
+    The memory allocation which is done on the stack is gone when the control moves out from the method i.e once the method completes its execution.
+    On the other hand, the memory allocation which is done on the heap needs to be de-allocated by the garbage collector.
+    When an object stored on the heap is no longer used, that means the object does not have any reference pointing, then the object is eligible for garbage collection.
+    At some point in time, the garbage collector will de-allocate this object from the heap.
+
