@@ -1,0 +1,28 @@
+Boxing and Unboxing in C#
+  Boxing and Unboxing in C#:
+    Let us understand Boxing and Unboxing in C# with an example. Please have a look at the following code.
+    public void SomeMethod()
+    {
+      int x = 10;
+      object y = x;
+      int z = (int) y;
+    }
+    The above method contains three lines of code. Now, let us understand what happens when we execute each line of code.
+    
+    Line1: int x = 10;
+    When this statement is executed, an integer variable x will be created in the Stack memory with a value of 10.
+
+    Line2: object y = x;
+    When this statement is executed, we are moving the x value i.e. 10 to an object data type. If you remember the object is the parent class for all 
+    classes in .NET Framework. When we move a value type to a reference to type, it is called Boxing. So, here we are moving value type integer x to
+    reference type object y, so we are performing boxing here.
+    So, when we move a value type to a reference type or when we set a value type to a reference type, it is called Boxing in C#.
+
+    Line3: int z = (int)y;
+    When this statement is executed, we are moving the object value to an integer data type by doing type casting. When we move a reference type to a value
+    type, it is called Unboxing. So, here we are moving reference type value i.e. y to integer type i.e. z, so we are performing Unboxing here.
+    So, when we move a reference type to a value type or when we set a reference type to a value type, it is called Unboxing in C#.
+    Note: Boxing means you basically set a value type to a reference type and unboxing means you basically set a reference type to a value type.
+
+  
+
